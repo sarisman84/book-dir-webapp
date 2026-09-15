@@ -1,1 +1,133 @@
-/* You can add global styles to this file, and also import other style files */
+/* Nordic Nocturne Design System */
+:root {
+  /* Colors - Dark (Default) */
+  --color-background: #101418;
+  --color-surface: #101418;
+  --color-surface-dim: #101418;
+  --color-surface-bright: #363a3e;
+  --color-surface-container-lowest: #0b0f12;
+  --color-surface-container-low: #181c20;
+  --color-surface-container: #1c2024;
+  --color-surface-container-high: #262a2f;
+  --color-surface-container-highest: #313539;
+  --color-surface-variant: #313539;
+  
+  --color-on-surface: #e0e3e8;
+  --color-on-surface-variant: #c3c7cc;
+  --color-inverse-surface: #e0e3e8;
+  --color-inverse-on-surface: #2d3135;
+  
+  --color-primary: #b5c9dc; /* Slate */
+  --color-on-primary: #1f3241;
+  --color-primary-container: #8fa3b5;
+  --color-on-primary-container: #263948;
+  --color-inverse-primary: #4d6171;
+  
+  --color-secondary: #e7c17e; /* Brass */
+  --color-on-secondary: #412d00;
+  --color-secondary-container: #5c420a;
+  --color-on-secondary-container: #d5b06f;
+  
+  --color-tertiary: #cdc5bc;
+  --color-on-tertiary: #343029;
+  --color-tertiary-container: #a69f97;
+  --color-on-tertiary-container: #3b3630;
+  
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+
+  --color-outline: #8d9196;
+  --color-outline-variant: #43474c;
+  
+  --color-quote-bg: #2a2620; /* Warm tinted plane for quotes */
+
+  /* Typography */
+  --font-family-serif: 'Newsreader', Palatino, Georgia, serif;
+  --font-family-sans: 'Source Sans 3', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  
+  --font-size-display: 2.75rem;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.25rem;
+  --font-size-body-lg: 1.125rem;
+  --font-size-body-md: 1rem;
+  --font-size-body-sm: 0.875rem;
+  --font-size-label-md: 0.875rem;
+  --font-size-label-sm: 0.75rem;
+
+  /* Spacing & Shapes */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.25rem;
+  --spacing-xl: 2rem;
+  --spacing-gutter: 1.5rem;
+  
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  --radius-none: 0px;
+}
+
+.light-theme {
+  /* Colors - Light (Approximation) */
+  --color-background: #fdfcfb;
+  --color-surface: #fdfcfb;
+  --color-surface-dim: #f5f2ef;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-lowest: #faf9f8;
+  --color-surface-container-low: #f2efeb;
+  --color-surface-container: #ebe7e3;
+  --color-surface-container-high: #e2ddd7;
+  --color-surface-container-highest: #d9d3cd;
+  --color-surface-variant: #e2ddd7;
+  
+  --color-on-surface: #1c1b1a;
+  --color-on-surface-variant: #4a4540;
+  --color-inverse-surface: #1c1b1a;
+  --color-inverse-on-surface: #fdfcfb;
+  
+  --color-primary: #7a92a8;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #d0e5f8;
+  --color-on-primary-container: #081d2b;
+  --color-inverse-primary: #314252;
+  
+  --color-secondary: #bfa05a;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #f9e9ca;
+  --color-on-secondary-container: #5c420a;
+  
+  --color-tertiary: #a69f97;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #efeae6;
+  --color-on-tertiary-container: #3b3630;
+  
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #f9dedc;
+  --color-on-error-container: #410002;
+
+  --color-outline: #8d9196;
+  --color-outline-variant: #c4c7cc;
+  
+  --color-quote-bg: #f4f1ee;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: var(--font-family-sans);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-family-serif);
+}
+
