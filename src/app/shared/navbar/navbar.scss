@@ -48,28 +48,3 @@
   stroke: currentColor;
 }
 
-/* Button Styles from DESIGN.md */
-
-.btn-primary {
-  background-color: var(--color-secondary); /* Brass */
-  color: var(--color-on-secondary);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-md);
-  font-family: var(--font-family-sans);
-}
-
-.btn-primary:hover {
-  opacity: 0.9;
-}
-
-.btn-ghost {
-  background: transparent;
-  color: var(--color-on-surface);
-  padding: 0.5rem 0.75rem;
-  border-radius: var(--radius-md);
-}
-
-.btn-ghost:hover {
-  color: var(--color-secondary);
-  text-decoration: none;
-}
