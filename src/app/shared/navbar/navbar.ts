@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styles: `
     .navbar {
       justify-content: space-between;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
-    
+
     .navbar-body {
       gap: 1rem;
     }
