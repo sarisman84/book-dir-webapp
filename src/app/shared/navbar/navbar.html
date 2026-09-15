@@ -1,0 +1,81 @@
+<div class="navbar">
+  <div class="container nav-container">
+    <div class="nav-group">
+      <h1 class="nav-logo">Book Site</h1>
+      
+      <button class="hamburger" (click)="toggleMenu()" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" [class.open]="isMenuOpen()">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <button class="nav-link btn-ghost" routerLink="/home" (click)="isMenuOpen.set(false)">Books</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn-ghost" routerLink="/about" (click)="isMenuOpen.set(false)">My Quotes</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <ul class="nav-list">
+      <li class="nav-item">
+        <button class="nav-link btn-ghost" routerLink="/register">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path
+              d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+            />
+          </svg>
+          <span class="desktop-only">EN/SV</span>
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link btn-ghost" routerLink="/register">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="m4.93 4.93 1.41 1.41" />
+            <path d="m17.66 17.66 1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="m19.07 4.93-1.41 1.41" />
+            <circle cx="12" cy="12" r="5" />
+          </svg>
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link btn-primary" routerLink="/login">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <span class="desktop-only">Login</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

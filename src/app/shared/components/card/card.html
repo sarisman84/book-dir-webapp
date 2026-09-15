@@ -1,0 +1,49 @@
+<article
+  class="card"
+  [class.standard-card]="variant === 'standard'"
+  [class.quote-card]="variant === 'quote'"
+  [attr.aria-label]="variant === 'standard' ? 'Book card for ' + title : 'Quote card'"
+>
+  @if (variant === 'quote') {
+    <span class="quote-mark" aria-hidden="true">“</span>
+  }
+
+  @if (variant === 'standard') {
+    <div class="card-layout-horizontal">
+      @if (coverImageUrl) {
+        <img [src]="coverImageUrl" class="card-cover" alt="Book cover of {{ title }}" />
+      }
+      <div class="card-main">
+        <header class="card-header">
+          <div class="card-title-row">
+            @if (title) {
+              <h3 class="card-title">{{ title }}</h3>
+            }
+            @if (status) {
+              <div class="status-badge" [attr.data-status]="status" role="status">
+                <span class="sr-only">Status: </span>{{ status }}
+              </div>
+            }
+          </div>
+          @if (author) {
+            <p class="card-author">by {{ author }}</p>
+          }
+        </header>
+
+        <div class="card-content">
+          <ng-content></ng-content>
+        </div>
+      </div>
+    </div>
+  } @else {
+    @if (variant === 'quote' || (!coverImageUrl && !author)) {
+      @if (title) {
+        <h3 class="card-title">{{ title }}</h3>
+      }
+    }
+
+    <div class="card-content">
+      <ng-content></ng-content>
+    </div>
+  }
+</article>
