@@ -1,6 +1,44 @@
+.card {
+  padding: var(--spacing-lg);
+  box-sizing: border-box;
+}
+
 .standard-card {
-  background-color: var(--color-surface-container-high);
+  background-color: var(--color-surface);
   border: 1px solid var(--color-outline);
   border-radius: var(--radius-md);
-  padding: var(--spacing-lg);
+}
+
+.quote-card {
+  background-color: var(--color-quote-bg);
+  border: none;
+  border-radius: 0;
+  position: relative;
+}
+
+.quote-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--font-family-serif);
+  font-size: 4rem;
+  color: var(--color-secondary);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.card-title {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--color-on-surface);
+  font-size: var(--font-size-h3);
+}
+
+.card-content {
+  color: var(--color-on-surface);
+}
+
+.quote-card .card-content {
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-quote);
+  font-style: italic;
 }

@@ -1,3 +1,10 @@
-<div class="standard-card">
-  <ng-content></ng-content>
+<div class="card" [class.standard-card]="variant === 'standard'" [class.quote-card]="variant === 'quote'">
+  <ng-container *ngIf="variant === 'quote'">
+    <span class="quote-mark">“</span>
+  </ng-container>
+  
+  <h3 *ngIf="title" class="card-title">{{ title }}</h3>
+  <div class="card-content">
+    <ng-content></ng-content>
+  </div>
 </div>

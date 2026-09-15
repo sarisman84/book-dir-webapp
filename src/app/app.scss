@@ -1,17 +1,31 @@
 .app-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto);
-  gap: 16px;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+}
 
-  padding: 1rem;
+.app-grid app-card {
+  grid-column: span 4;
+}
+
+@media (max-width: 1024px) {
+  .app-grid app-card {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-grid app-card {
+    grid-column: span 12;
+  }
 }
 
 .page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-lg) var(--spacing-gutter);
+  padding: var(--spacing-lg) 0;
   gap: var(--spacing-md);
 }
 
