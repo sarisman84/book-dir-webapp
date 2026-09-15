@@ -67,6 +67,11 @@
       [pageNumber]="42"
     ></app-featured-quote>
   </section>
+  <app-pagination 
+    [totalPages]="5" 
+    [currentPage]="1" 
+    (pageChange)="handlePageChange($event)">
+  </app-pagination>
 </main>
 
 <router-outlet />

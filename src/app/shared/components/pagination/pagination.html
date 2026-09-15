@@ -1,0 +1,48 @@
+<div class="pagination-container">
+  <div class="desktop-pagination">
+    <button 
+      class="btn-pagination" 
+      [disabled]="currentPage === 1" 
+      (click)="onPageChange(currentPage - 1)"
+      aria-label="Previous page">
+      &lsaquo;
+    </button>
+
+    <div class="pages">
+      <button 
+        *ngFor="let page of pages" 
+        class="page-number" 
+        [class.active]="page === currentPage" 
+        (click)="onPageChange(page)">
+        {{ page }}
+      </button>
+    </div>
+
+    <button 
+      class="btn-pagination" 
+      [disabled]="currentPage === totalPages" 
+      (click)="onPageChange(currentPage + 1)"
+      aria-label="Next page">
+      &rsaquo;
+    </button>
+  </div>
+
+  <div class="mobile-pagination">
+    <button 
+      class="btn-pagination" 
+      [disabled]="currentPage === 1" 
+      (click)="onPageChange(currentPage - 1)"
+      aria-label="Previous page">
+      &lsaquo;
+    </button>
+    <span class="page-indicator">Page {{ currentPage }} of {{ totalPages }}</span>
+    <button 
+      class="btn-pagination" 
+      [disabled]="currentPage === totalPages" 
+      (click)="onPageChange(currentPage + 1)"
+      aria-label="Next page">
+      &rsaquo;
+    </button>
+  </div>
+</div>
+

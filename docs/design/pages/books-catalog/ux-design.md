@@ -18,6 +18,29 @@ The Books Catalog screen provides a comprehensive, searchable index of the libra
 - **Atmosphere**: Airy, clean, and academic. It replaces the "midnight archive" mood with a "bright reading room" atmosphere, prioritizing clarity and openness.
 
 ## Components
-- **Search Bar**: Centered or top-aligned with a subtle border and clear focus state.
-- **Book Cards**: Elevated with a very soft shadow or a fine 1px border, containing the book cover, title (serif), author (sans-serif), and a status badge.
-- **Status Badges**: Color-coded for "Available", "Reserved", or "Archived", utilizing muted versions of the system's semantic colors.
+
+### Search Bar
+The search interface is designed for maximum accessibility and minimal distraction.
+- **Visuals**: A wide input field with a warm cream background, framed by a fine 1px border in muted slate.
+- **Typography**: Uses a clean sans-serif (Source Sans 3) for input text in deep charcoal, with placeholders in a subdued slate tone.
+- **Interaction**: Upon focus, the border shifts to a distinct Brass accent, avoiding glowing effects to maintain the scholarly aesthetic.
+- **Geometry**: 8px corner radius with a generous internal padding of `0.75rem 1rem` to ensure a breathable touch target.
+
+### Book Cards
+Book cards serve as the primary unit of the catalog, balancing visual appeal with bibliographic precision.
+- **Container**: A elevated surface on the cream base, defined by a fine 1px slate border and a very subtle, low-contrast shadow to create a sense of physical layers.
+- **Geometry**: 8px corner radius and a standardized internal padding of `20px` (`1.25rem`).
+- **Content Layout**:
+    - **Cover**: High-resolution image of the book cover.
+    - **Title**: Rendered in the editorial serif stack (Newsreader) in deep charcoal, creating a literary focal point.
+    - **Author**: Displayed in a clean sans-serif (Source Sans 3) in muted slate, providing a clear hierarchical distinction from the title.
+    - **Badge**: Positioned prominently to indicate current status at a glance.
+
+### Status Badges
+Badges provide immediate semantic feedback on book availability using a muted, archival color palette.
+- **Visuals**: Small pill-shaped containers with 8px corner radius.
+- **Color Coding**:
+    - **Available**: Pale botanical green background with deep green text.
+    - **Reserved**: Pale amber/brass background with deep amber text.
+    - **Archived**: Pale slate-grey background with deep grey text.
+- **Styling**: Utilizes muted semantic versions of the core system colors to avoid visual aggression against the cream background, ensuring the badge informs without distracting from the book's metadata.

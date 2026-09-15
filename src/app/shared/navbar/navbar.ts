@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   imports: [],
@@ -7,7 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.scss',
 
 })
-export class Navbar {}
+export class Navbar {
+  protected readonly isMenuOpen = signal(false);
+  protected readonly currentLang = signal('EN');
+
+  toggleMenu() {
+    this.isMenuOpen.update(v => !v);
+  }
+}
 
 // styleUrl: './navbar.scss',
 // templateUrl: './navbar.html',
