@@ -132,6 +132,9 @@ spacing:
   space-xl: 2rem
 ---
 
+## Screens
+- [Books Catalog (Light Theme)](pages/books-catalog/ux-design.md)
+
 ## Brand & Style
 The design system embodies the hushed, contemplative atmosphere of a Nordic research archive at midnight. It balances scholarly discipline with tactile warmth, evoking the sensory qualities of heavy paper, patinated brass fittings, slate tables, and aged linen bindings. 
 
