@@ -12,7 +12,7 @@ A sophisticated literary directory and personal quote manager designed with the 
 ## Table of Contents
 - [Features](#features)
 - [Getting Started](#getting-started)
-  - [Manual Setup](#manual-setup)
+  - [Project Setup](#project-setup)
   - [Working with Local AI Models](#working-with-local-ai-models)
 - [Building](#building)
 - [Testing](#testing)
@@ -31,12 +31,12 @@ A sophisticated literary directory and personal quote manager designed with the 
 
 ## Getting Started
 
-### Manual Setup
+### Project Setup
 
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd website
+   cd book-dir-webapp
    ```
 
 2. **Install dependencies**
