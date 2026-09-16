@@ -14,6 +14,7 @@ A sophisticated literary directory and personal quote manager designed with the 
 - [Getting Started](#getting-started)
   - [Manual Setup](#manual-setup)
   - [Working with Local AI Models](#working-with-local-ai-models)
+- [Building](#building)
 - [Testing](#testing)
 - [License](#license)
 
@@ -61,14 +62,32 @@ This project is optimized for AI-driven development. If you are using a tool lik
    - *Add new features* to the Global Directory or Personal Collection.
    - *Refactor themes* by updating the OKLCH color variables.
 
+## Building
+
+To build the project for production, use the following command:
+
+```bash
+npm run build
+```
+
+The production-ready assets will be generated in the `dist/` directory. For more information on managing the build process, refer to the [Official Angular CLI Documentation](https://angular.dev/guide/cli).
+
 ## Testing
 
 The project uses **Vitest** for unit and integration testing.
 
-To run the test suite:
+### Unit & Integration Tests
+To run the core test suite:
 ```bash
 npm test
 ```
+
+### End-to-End (E2E) Tests
+For comprehensive user-flow testing, it is recommended to use tools like **Cypress** or **Playwright**. You can add E2E capabilities to this project via the Angular CLI:
+```bash
+ng add @cypress/schematic
+```
+Once configured, E2E tests can be executed to ensure the Nordic Library's critical paths (e.g., authentication and book editing) are functioning correctly.
 
 ## License
 
