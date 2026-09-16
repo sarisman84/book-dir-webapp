@@ -7,7 +7,10 @@
 
 A sophisticated literary directory and personal quote manager designed with the **Nordic Nocturne** aesthetic—emphasizing high-contrast dark tones and brass accents.
 
-![Project Preview](https://picsum.photos/800/400)
+> [!NOTE]
+> This project is currently a frontend prototype and is not fully implemented. Key missing features include a functional login page, a live backend system, and fully operational pagination.
+
+![Project Preview](docs/preview/book-site-dark-mode.png)
 
 ## Table of Contents
 - [Features](#features)
