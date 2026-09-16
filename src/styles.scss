@@ -1,47 +1,47 @@
 /* Nordic Nocturne Design System */
 :root {
   /* Colors - Dark (Default) */
-  --color-background: #181c20;
-  --color-surface: #21272d;
-  --color-surface-dim: #181c20;
-  --color-surface-bright: #21272d;
-  --color-surface-container-lowest: #0b0f12;
-  --color-surface-container-low: #181c20;
-  --color-surface-container: #1c2024;
-  --color-surface-container-high: #21272d;
-  --color-surface-container-highest: #313539;
-  --color-surface-variant: #313539;
+  --color-background: oklch(0.222 0.007 266.94);
+  --color-surface: oklch(0.267 0.010 267.72);
+  --color-surface-dim: oklch(0.222 0.007 266.94);
+  --color-surface-bright: oklch(0.267 0.010 267.72);
+  --color-surface-container-lowest: oklch(0.164 0.006 254.53);
+  --color-surface-container-low: oklch(0.222 0.007 266.94);
+  --color-surface-container: oklch(0.240 0.007 266.56);
+  --color-surface-container-high: oklch(0.267 0.010 267.72);
+  --color-surface-container-highest: oklch(0.325 0.006 265.13);
+  --color-surface-variant: oklch(0.325 0.006 265.13);
   
-  --color-on-surface: #f1ece1;
-  --color-on-surface-variant: #9ca3af;
-  --color-inverse-surface: #f1ece1;
-  --color-inverse-on-surface: #2d3135;
+  --color-on-surface: oklch(0.947 0.016 104.54);
+  --color-on-surface-variant: oklch(0.711 0.015 284.84);
+  --color-inverse-surface: oklch(0.947 0.016 104.54);
+  --color-inverse-on-surface: oklch(0.309 0.006 265.35);
   
-  --color-primary: #8fa3b5; /* Slate */
-  --color-on-primary: #1f3241;
-  --color-primary-container: #8fa3b5;
-  --color-on-primary-container: #263948;
-  --color-inverse-primary: #4d6171;
+  --color-primary: oklch(0.701 0.024 262.75); /* Slate */
+  --color-on-primary: oklch(0.302 0.028 264.20);
+  --color-primary-container: oklch(0.701 0.024 262.75);
+  --color-on-primary-container: oklch(0.329 0.027 263.00);
+  --color-inverse-primary: oklch(0.477 0.025 259.94);
   
-  --color-secondary: #d4af6e; /* Brass */
-  --color-on-secondary: #181c20;
-  --color-secondary-container: #5c420a;
-  --color-on-secondary-container: #d5b06f;
+  --color-secondary: oklch(0.785 0.072 94.30); /* Brass */
+  --color-on-secondary: oklch(0.222 0.007 266.94);
+  --color-secondary-container: oklch(0.407 0.053 89.72);
+  --color-on-secondary-container: oklch(0.789 0.072 94.35);
   
-  --color-tertiary: #cdc5bc;
-  --color-on-tertiary: #343029;
-  --color-tertiary-container: #a69f97;
-  --color-on-tertiary-container: #3b3630;
+  --color-tertiary: oklch(0.830 0.014 87.66);
+  --color-on-tertiary: oklch(0.313 0.012 99.61);
+  --color-tertiary-container: oklch(0.708 0.013 88.05);
+  --color-on-tertiary-container: oklch(0.338 0.010 88.24);
   
-  --color-error: #ffb4ab;
-  --color-on-error: #690005;
-  --color-error-container: #93000a;
-  --color-on-error-container: #ffdad6;
+  --color-error: oklch(0.846 0.075 14.28);
+  --color-on-error: oklch(0.338 0.121 5.01);
+  --color-error-container: oklch(0.430 0.154 5.05);
+  --color-on-error-container: oklch(0.922 0.036 16.47);
 
-  --color-outline: #3a434b;
-  --color-outline-variant: #43474c;
+  --color-outline: oklch(0.375 0.013 262.04);
+  --color-outline-variant: oklch(0.395 0.007 274.54);
   
-  --color-quote-bg: #2a2620; /* Warm tinted plane for quotes */
+  --color-quote-bg: oklch(0.273 0.010 95.13); /* Warm tinted plane for quotes */
 
   /* Typography */
   --font-family-serif: 'Newsreader', Palatino, Georgia, serif;
@@ -73,97 +73,50 @@
   --radius-none: 0px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    /* Colors - Light (Respecting Browser Settings) */
-    --color-background: #fdfcfb;
-    --color-surface: #fdfcfb;
-    --color-surface-dim: #f5f2ef;
-    --color-surface-bright: #ffffff;
-    --color-surface-container-lowest: #faf9f8;
-    --color-surface-container-low: #f2efeb;
-    --color-surface-container: #ebe7e3;
-    --color-surface-container-high: #e2ddd7;
-    --color-surface-container-highest: #d9d3cd;
-    --color-surface-variant: #e2ddd7;
-    
-    --color-on-surface: #1c1b1a;
-    --color-on-surface-variant: #4a4540;
-    --color-inverse-surface: #1c1b1a;
-    --color-inverse-on-surface: #fdfcfb;
-    
-    --color-primary: #7a92a8;
-    --color-on-primary: #ffffff;
-    --color-primary-container: #d0e5f8;
-    --color-on-primary-container: #081d2b;
-    --color-inverse-primary: #314252;
-    
-    --color-secondary: #bfa05a;
-    --color-on-secondary: #ffffff;
-    --color-secondary-container: #f9e9ca;
-    --color-on-secondary-container: #5c420a;
-    
-    --color-tertiary: #a69f97;
-    --color-on-tertiary: #ffffff;
-    --color-tertiary-container: #efeae6;
-    --color-on-tertiary-container: #3b3630;
-    
-    --color-error: #ba1a1a;
-    --color-on-error: #ffffff;
-    --color-error-container: #f9dedc;
-    --color-on-error-container: #410002;
-    
-    --color-outline: #8d9196;
-    --color-outline-variant: #c4c7cc;
-    
-    --color-quote-bg: #f4f1ee;
-  }
-}
-
 .light-theme {
 
   /* Colors - Light (Approximation) */
-  --color-background: #fdfcfb;
-  --color-surface: #fdfcfb;
-  --color-surface-dim: #f5f2ef;
-  --color-surface-bright: #ffffff;
-  --color-surface-container-lowest: #faf9f8;
-  --color-surface-container-low: #f2efeb;
-  --color-surface-container: #ebe7e3;
-  --color-surface-container-high: #e2ddd7;
-  --color-surface-container-highest: #d9d3cd;
-  --color-surface-variant: #e2ddd7;
+  --color-background: oklch(0.992 0.004 88.89);
+  --color-surface: oklch(0.992 0.004 88.89);
+  --color-surface-dim: oklch(0.964 0.006 86.51);
+  --color-surface-bright: oklch(1.000 0.003 91.44);
+  --color-surface-container-lowest: oklch(0.983 0.004 88.87);
+  --color-surface-container-low: oklch(0.954 0.008 93.24);
+  --color-surface-container: oklch(0.931 0.008 85.75);
+  --color-surface-container-high: oklch(0.901 0.010 90.41);
+  --color-surface-container-highest: oklch(0.872 0.010 84.59);
+  --color-surface-variant: oklch(0.901 0.010 90.41);
   
-  --color-on-surface: #1c1b1a;
-  --color-on-surface-variant: #4a4540;
-  --color-inverse-surface: #1c1b1a;
-  --color-inverse-on-surface: #fdfcfb;
+  --color-on-surface: oklch(0.223 0.002 84.81);
+  --color-on-surface-variant: oklch(0.395 0.009 82.34);
+  --color-inverse-surface: oklch(0.223 0.002 84.81);
+  --color-inverse-on-surface: oklch(0.992 0.004 88.89);
   
-  --color-primary: #7a92a8;
-  --color-on-primary: #ffffff;
-  --color-primary-container: #d0e5f8;
-  --color-on-primary-container: #081d2b;
-  --color-inverse-primary: #314252;
+  --color-primary: oklch(0.642 0.031 265.29);
+  --color-on-primary: oklch(1.000 0.003 91.44);
+  --color-primary-container: oklch(0.907 0.023 261.65);
+  --color-on-primary-container: oklch(0.215 0.029 263.72);
+  --color-inverse-primary: oklch(0.365 0.027 268.98);
   
-  --color-secondary: #bfa05a;
-  --color-on-secondary: #ffffff;
-  --color-secondary-container: #f9e9ca;
-  --color-on-secondary-container: #5c420a;
+  --color-secondary: oklch(0.732 0.077 100.67);
+  --color-on-secondary: oklch(1.000 0.003 91.44);
+  --color-secondary-container: oklch(0.946 0.040 101.97);
+  --color-on-secondary-container: oklch(0.407 0.053 89.72);
   
-  --color-tertiary: #a69f97;
-  --color-on-tertiary: #ffffff;
-  --color-tertiary-container: #efeae6;
-  --color-on-tertiary-container: #3b3630;
+  --color-tertiary: oklch(0.708 0.013 88.05);
+  --color-on-tertiary: oklch(1.000 0.003 91.44);
+  --color-tertiary-container: oklch(0.941 0.008 78.58);
+  --color-on-tertiary-container: oklch(0.338 0.010 88.24);
   
-  --color-error: #ba1a1a;
-  --color-on-error: #ffffff;
-  --color-error-container: #f9dedc;
-  --color-on-error-container: #410002;
+  --color-error: oklch(0.521 0.172 6.00);
+  --color-on-error: oklch(1.000 0.003 91.44);
+  --color-error-container: oklch(0.925 0.026 15.46);
+  --color-on-error-container: oklch(0.243 0.087 4.94);
 
-  --color-outline: #8d9196;
-  --color-outline-variant: #c4c7cc;
+  --color-outline: oklch(0.654 0.005 273.97);
+  --color-outline-variant: oklch(0.828 0.004 287.01);
   
-  --color-quote-bg: #f4f1ee;
+  --color-quote-bg: oklch(0.961 0.006 86.50);
 }
 
 body {

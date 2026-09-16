@@ -17,3 +17,4 @@
 - **Personal Collection**: The set of Quotes owned by a specific User.
 - **Auth Token**: A mock JWT string used to verify identity and permissions in LocalStorage.
 - **Nordic Nocturne**: The visual design system emphasizing high-contrast dark tones, serif typography for literary content, and brass accents.
+- **Theme Switching**: The ability to toggle between the default Dark theme (Nordic Nocturne) and a Light theme approximation by applying the `.light-theme` class to the document root. This is managed via CSS Custom Properties (using OKLCH color space).
