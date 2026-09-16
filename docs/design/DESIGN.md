@@ -143,11 +143,20 @@ The aesthetic is grounded in restrained editorial minimalism. It rejects superfi
 ## Colors
 The palette is built strictly around muted cool stone, warm paper ink, and radiant brass accents.
 
+### Dark Theme (Default)
 - **Primary Canvas & Surfaces**: `#181C20` anchors the application as the base page background. Card and elevated structural surfaces use `#21272D`.
 - **Primary Text & Accents**: `#F1ECE1` (Ink) serves as the primary high-readability foreground token, paired with `#9CA3AF` for subdued bibliographic metadata, tertiary hints, and inactive UI states.
 - **Accents**: `#8FA3B5` (Slate) directs secondary actions, structural tabs, and functional utilities. `#D4AF6E` (Brass) highlights key editorial interventions, active links, pull quote marks, reading progress indicators, and primary callouts. `#2A2620` (Accent Subtle) provides a warm, tinted ground explicitly designated for pull quotes and highlighted annotations.
 - **Borders & Dividers**: All structural framing is defined by `#3A434B`.
 - **System States**: Semantic feedback utilizes muted botanical and natural mineral tones: Success `#7FB08D`, Danger `#D07A6F`, and Warning `#D9A441`.
+
+### Light Theme
+The Light Theme is a high-legibility approximation of the Nordic Nocturne aesthetic, designed for brightly lit environments. It replaces the midnight stone canvas with warm, aged paper tones.
+- **Canvas**: Shifts from `#181C20` to `#FDFCFB` (Warm Paper).
+- **Surfaces**: Card surfaces transition to `#EBE7E3` and `#E2DDD7`.
+- **Text**: Primary text shifts to a deep charcoal/ink (`#1C1B1A`).
+- **Accents**: Brass remains the primary accent but is adjusted for contrast against the light background.
+- **Implementation**: Triggered by applying the `.light-theme` class to the root element, overriding CSS Custom Properties.
 
 ## Typography
 Typographic treatment separates literary presentation from utilitarian interaction:
