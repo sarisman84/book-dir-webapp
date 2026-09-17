@@ -1,57 +1,5 @@
-.app-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-md);
-  padding: var(--spacing-md) 0;
-  border-bottom: 1px solid var(--color-outline-variant);  
-}
-
-.featured-quote-section {
-  padding: var(--spacing-xl) 0;
-}
-
-.section-header {
-  margin-bottom: var(--spacing-md);
-}
-
-.section-title {
-  margin: 0;
-  color: var(--color-on-surface);
-  font-size: var(--font-size-h3);
-  font-family: var(--font-family-serif);
-}
-
-@media (max-width: 640px) {
-  .app-grid {
-    grid-template-columns: 1fr;
-    border-bottom: 1px solid var(--color-outline-variant);  
-  }
-}
-
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--spacing-lg) 0;
-  gap: var(--spacing-md);
-  border-bottom: 1px solid var(--color-outline-variant);
-}
-
-.header-title-group {
+.my-quotes-page {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-lg);
 }
-
-.page-title {
-  margin: 0;
-  color: var(--color-on-surface);
-  font-size: var(--font-size-h2);
-}
-
-.page-subtitle {
-  color: var(--color-on-surface-variant);
-  font-size: var(--font-size-body-sm);
-  font-family: var(--font-family-sans);
-}
-
