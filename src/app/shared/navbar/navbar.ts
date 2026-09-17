@@ -1,8 +1,10 @@
 import { Component, inject, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { ThemeService } from '../../core/services/theme.service';
 
 @Component({
-  imports: [],
+  standalone: true,
+  imports: [RouterLink],
   selector: 'app-navbar',
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
