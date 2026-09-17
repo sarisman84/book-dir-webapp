@@ -1,5 +1,5 @@
-<div class="pagination-container">
-  <div class="desktop-pagination">
+<div class="pagination-container" role="navigation" aria-label="Pagination navigation">
+  <div class="desktop-pagination" role="group" aria-label="Page navigation">
     <button 
       class="btn-pagination" 
       [disabled]="currentPage === 1" 
@@ -8,12 +8,14 @@
       &lsaquo;
     </button>
 
-    <div class="pages">
+    <div class="pages" role="list">
       <button 
         *ngFor="let page of pages" 
         class="page-number" 
         [class.active]="page === currentPage" 
-        (click)="onPageChange(page)">
+        (click)="onPageChange(page)"
+        [attr.aria-current]="page === currentPage ? 'page' : null"
+        [attr.role]="page === currentPage ? 'listitem' : null">
         {{ page }}
       </button>
     </div>
@@ -27,7 +29,7 @@
     </button>
   </div>
 
-  <div class="mobile-pagination">
+  <div class="mobile-pagination" role="group" aria-label="Mobile page navigation">
     <button 
       class="btn-pagination" 
       [disabled]="currentPage === 1" 
@@ -35,7 +37,7 @@
       aria-label="Previous page">
       &lsaquo;
     </button>
-    <span class="page-indicator">Page {{ currentPage }} of {{ totalPages }}</span>
+    <span class="page-indicator" aria-live="polite" aria-atomic="true">Page {{ currentPage }} of {{ totalPages }}</span>
     <button 
       class="btn-pagination" 
       [disabled]="currentPage === totalPages" 
@@ -45,4 +47,3 @@
     </button>
   </div>
 </div>
-

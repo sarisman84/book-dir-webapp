@@ -1,4 +1,49 @@
 /* Nordic Nocturne Design System */
+
+/* Skip link for WCAG a11y */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  z-index: 10000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 var(--radius-md) 0;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Screen reader only utility class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Visible focus styles for keyboard navigation */
+:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Nordic Nocturne Design System */
 :root {
   /* Colors - Dark (Default) */
   --color-background: oklch(0.222 0.007 266.94);
@@ -180,5 +225,16 @@ h1, h2, h3, .font-serif {
 .btn-ghost:hover {
   color: var(--color-secondary);
   text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
