@@ -1,4 +1,4 @@
-<article class="quote-card">
+<article class="quote-card" role="figure" [attr.aria-label]="'Quote by ' + quote.author">
   <span class="quote-mark" aria-hidden="true">“</span>
   <div class="quote-content">
     <p class="quote-text">{{ quote.text }}</p>
@@ -10,4 +10,3 @@
     </footer>
   </div>
 </article>
-
