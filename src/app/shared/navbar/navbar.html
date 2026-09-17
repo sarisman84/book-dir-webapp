@@ -11,12 +11,12 @@
 
       <nav class="nav-menu" [class.open]="isMenuOpen()">
         <ul class="nav-list">
-          <li class="nav-item">
-            <button class="nav-link btn-ghost" routerLink="/home" (click)="isMenuOpen.set(false)">Books</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link btn-ghost" routerLink="/about" (click)="isMenuOpen.set(false)">My Quotes</button>
-          </li>
+<li class="nav-item">
+             <button class="nav-link btn-ghost" routerLink="/" (click)="isMenuOpen.set(false)">Books</button>
+           </li>
+           <li class="nav-item">
+             <button class="nav-link btn-ghost" routerLink="/my-quotes" (click)="isMenuOpen.set(false)">My Quotes</button>
+           </li>
         </ul>
       </nav>
     </div>

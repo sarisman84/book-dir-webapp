@@ -1,0 +1,58 @@
+<header class="page-header">
+  <div class="header-title-group">
+    <h2 class="page-title">Books</h2>
+    <span class="page-subtitle">Shared library catalog and scholarly collection</span>
+  </div>
+  <button class="btn-primary">+ Add Book</button>
+</header>
+<section class="app-grid">
+  <app-card
+    variant="standard"
+    title="Book 1"
+    author="Author 1"
+    coverImageUrl="https://picsum.photos/seed/book1/200/300"
+    status="Available"
+  ></app-card>
+  <app-card
+    variant="standard"
+    title="Book 2"
+    author="Author 2"
+    coverImageUrl="https://picsum.photos/seed/book2/200/300"
+    status="Reserved"
+  ></app-card>
+  <app-card
+    variant="standard"
+    title="Book 3"
+    author="Author 3"
+    coverImageUrl="https://picsum.photos/seed/book3/200/300"
+    status="Reserved"
+  ></app-card>
+  <app-card
+    variant="standard"
+    title="Book 4"
+    author="Author 4"
+    coverImageUrl="https://picsum.photos/seed/book4/200/300"
+    status="Available"
+  ></app-card>
+  <app-card
+    variant="standard"
+    title="Book 5"
+    author="Author 5"
+    coverImageUrl="https://picsum.photos/seed/book5/200/300"
+    status="Available"
+  ></app-card>
+  <app-card
+    variant="standard"
+    title="Book 6"
+    author="Author 6"
+    coverImageUrl="https://picsum.photos/seed/book6/200/300"
+    status="Reserved"
+  ></app-card>
+</section>
+<section class="featured-quote-section">
+  <header class="section-header">
+    <h3 class="section-title">Featured Personal Quote Snippet</h3>
+  </header>
+  <app-featured-quote [quote]="sampleQuote" [pageNumber]="42"></app-featured-quote>
+</section>
+<app-pagination [totalPages]="5" [currentPage]="1" (pageChange)="handlePageChange($event)"></app-pagination>

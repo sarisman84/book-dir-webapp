@@ -1,12 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from './shared/navbar/navbar';
-import { CardComponent } from './shared/components/card/card';
-import { FeaturedQuoteComponent } from './shared/components/featured-quote/featured-quote';
-import { PaginationComponent } from './shared/components/pagination/pagination';
 
 @Component({
-  imports: [RouterOutlet, Navbar, CardComponent, FeaturedQuoteComponent, PaginationComponent],
+  imports: [RouterOutlet, Navbar],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
