@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { CardComponent } from '../shared/components/card/card';
-import { FeaturedQuoteComponent } from '../shared/components/featured-quote/featured-quote';
-import { PaginationComponent } from '../shared/components/pagination/pagination';
-import { Quote } from '../core/services/quote.service';
+import { CardComponent } from '../../shared/components/card/card';
+import { FeaturedQuoteComponent } from '../../shared/components/featured-quote/featured-quote';
+import { PaginationComponent } from '../../shared/components/pagination/pagination';
+import { Quote } from '../../core/services/quote.service';
 import { CommonModule } from '@angular/common';
 
 @Component({

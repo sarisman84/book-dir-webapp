@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { Quote } from '../core/services/quote.service';
+import { Quote } from '../../core/services/quote.service';
 
 interface QuoteWithBook extends Quote {
   bookTitle: string;
