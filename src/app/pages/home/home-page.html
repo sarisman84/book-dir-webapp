@@ -1,11 +1,11 @@
 <header class="page-header">
   <div class="header-title-group">
-    <h2 class="page-title">Books</h2>
+    <h1 class="page-title">Books</h1>
     <span class="page-subtitle">Shared library catalog and scholarly collection</span>
   </div>
-  <button class="btn-primary">+ Add Book</button>
+  <button class="btn-primary" aria-label="Add a new book to the catalog">+ Add Book</button>
 </header>
-<section class="app-grid">
+<section class="app-grid" aria-label="Book catalog">
   @for (book of paginatedBooks; track book.id) {
     <app-card
       variant="standard"
@@ -16,9 +16,9 @@
     ></app-card>
   }
 </section>
-<section class="featured-quote-section">
+<section class="featured-quote-section" aria-label="Featured quote">
   <header class="section-header">
-    <h3 class="section-title">Featured Personal Quote Snippet</h3>
+    <h2 class="section-title">Featured Personal Quote Snippet</h2>
   </header>
   <app-featured-quote [quote]="sampleQuote" [pageNumber]="42"></app-featured-quote>
 </section>

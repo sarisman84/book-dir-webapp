@@ -1,17 +1,19 @@
 <header class="page-header">
   <div class="header-title-group">
-    <h2 class="page-title">My Quotes</h2>
+    <h1 class="page-title">My Quotes</h1>
     <span class="page-subtitle">Your personal repository of saved quotations</span>
   </div>
   <div class="header-actions">
-    <span class="quote-count-badge">{{ quoteCount }} quote{{ quoteCount !== 1 ? 's' : '' }}</span>
-    <a routerLink="/" class="btn-ghost back-link">← Back</a>
+    <span class="quote-count-badge" aria-live="polite" aria-atomic="true">{{ quoteCount }} quote{{ quoteCount !== 1 ? 's' : '' }}</span>
+    <a routerLink="/" class="btn-ghost back-link" aria-label="Go back to Books page">← Back</a>
   </div>
 </header>
 
-<section class="search-section" *ngIf="!showEmptyState || searchQuery">
+<section class="search-section" *ngIf="!showEmptyState || searchQuery" aria-label="Search quotes">
   <div class="search-container">
+    <label for="quote-search" class="sr-only">Search quotes</label>
     <input
+      id="quote-search"
       type="search"
       class="search-input"
       placeholder="Search quotes by keyword, author, or book..."
@@ -25,14 +27,14 @@
   </div>
 </section>
 
-<section class="quotes-container" *ngIf="!showEmptyState">
+<section class="quotes-container" *ngIf="!showEmptyState" aria-live="polite" aria-label="Saved quotes list">
   @for (book of getBookHeaders(); track book) {
     <div class="book-group">
-      <h3 class="book-group-header">{{ book }}</h3>
+      <h2 class="book-group-header">{{ book }}</h2>
       <hr class="book-divider" />
-      <div class="quotes-list">
+      <div class="quotes-list" role="list">
         @for (quote of getQuotesForBook(book); track quote.id) {
-          <article class="quote-card">
+          <article class="quote-card" role="listitem" [attr.aria-label]='"Quote by " + quote.author'>
             <span class="quote-mark" aria-hidden="true">"</span>
             <div class="quote-content">
               <p class="quote-text">{{ quote.text }}</p>
@@ -48,10 +50,10 @@
   }
 </section>
 
-<section class="empty-state" *ngIf="showEmptyState && !searchQuery">
+<section class="empty-state" *ngIf="showEmptyState && !searchQuery" aria-label="No quotes saved">
   <div class="empty-state-content">
     <p class="empty-state-message">No quotes have been saved yet.</p>
     <p class="empty-state-guidance">Start saving quotes from your reading to build your personal collection.</p>
-    <button class="btn-primary">Begin Saving Quotes</button>
+    <button class="btn-primary" aria-label="Begin saving quotes">Begin Saving Quotes</button>
   </div>
 </section>
